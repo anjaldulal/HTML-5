@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+</head>
+<body>
+    <h1>My Contact Details</h1>
+    <h4>Kathmandu,Nepal</h4>
+    <h4>980011001122</h4>
+    <h4>xyzabcd@gmail.com</h4>
+    <hr>
+    <h2>Enter Your Information Below</h2>
+    <!-- here "enctype" attribute defines how the data should be encrypted to the backend, so we've given it a value of plaintext -->
+    <form action="mailto:njldulal@gmail.com" method="POST" enctype="text/plain">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" name="fName" id="fname" required>
+            <label for="mname">Middle Name</label>
+            <input type="text" name="mName" id="mname">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lName" id="lname" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="yourEmail" id="email"  required>
+        </div>
+        <br>
+        <div>
+            <label for="address">Address</label>
+            <input type="text" name="yourAddress" id="address" required>
+        </div>
+        <br>
+        <div>
+            <label for="contact">Contact Number</label>
+            <input type="number" name="yourContact" id="contact" required>
+        </div>
+        <br>
+        <div>
+            <label for="message">Message for Us</label><br>
+            <textarea name="textmessage" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="file">Insert File Here</label>
+            <input type="file" name="yourFile" id="file">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
